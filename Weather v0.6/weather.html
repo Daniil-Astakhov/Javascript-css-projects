@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Погода там где ты</title>
+</head>
+<body>
+    <nav>
+        <button id="woo"></button>
+    </nav>
+        <div class="container">
+            <div class="inputs">
+                <div class="inputs__main_line">
+                    <div class="inputs_item" id="output__temp"></div>   
+                    <div class="inputs_item" id="output__name"></div>
+                    <div id="took" class="inputs_item">
+                        <img class="inputs_img" id = "weatherImg"  src="img/cloud.svg" alt="">
+                        <div id="output__weather"></div>
+                    </div>
+                    <div id="kup" class="inputs_item">
+                        <img class="inputs_img" src="img/humidity.svg" alt="">
+                        <div id="output__humidity"></div>
+                    </div>
+                    <div id="flug" class="inputs_item">
+                        <img class="inputs_img" src="img/fluger.svg" alt="">
+                        <div id="output__wind"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="over">
+                <div class="over_items">
+                    <div class="over_item_sunline"><img class="over_item_sun" src="img/sun.svg" alt="sun"></div>
+                    <div class="over_item" id="output__sunrise"></div>
+                    <div class="over_item" id="output__sunset"></div>
+                    <div class="over_item">
+                        <img class="over_item_press" src="img/press.svg" src="" alt="">
+                        <div id="output__pressure"></div>
+                    </div>
+                    
+                    <div class="over_item" id="output__visibility"></div>
+                    <div class="over_item" id="output__temp_max"></div>
+                    <div class="over_item" id="output__temp_min"></div>
+                    <div class="over_item" id="output__feels_like"></div>
+                </div>
+                
+                <input class="input" hidden id="input" type="text"> 
+            </div>
+        </div> 
+
+    
+    <script src="js/script.js"></script>
+</body>
+</html>

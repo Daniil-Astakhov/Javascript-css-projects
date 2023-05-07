@@ -1,0 +1,52 @@
+@media (max-width: 767px)
+    body
+        background-size: 200%
+        .container
+            display: grid
+            grid-template-columns:1fr
+        .inputs
+            display: grid
+            justify-content: center
+            &__main_line
+                display: grid
+                position: static
+                top: 5%
+                grid-template-columns: 1fr 1fr 1fr
+                gap: 20px
+                grid-template-rows: 60px 10px 130px 50px
+                grid-template-areas: 'temp temp temp' 'name name name' 'took took took' 'kup . flug'
+                justify-content: center
+                align-item: center
+            &_item
+                display: inline-flex
+                justify-content: center
+                align-items: center
+        #took
+            grid-area: took
+            justify-content: center
+            margin: 0 auto
+            margin-top: 190px
+        #output__temp
+            margin: 0 auto
+            margin-top: 120px
+            grid-area: temp
+            justify-content: center
+        #output__name
+            margin: 0 auto
+            margin-top: 120px
+            text-align: center
+            grid-area: name
+            justify-content: center
+        #kup
+            grid-area: kup
+            justify-content: center
+            margin: 0 auto
+            margin-top: 120px
+        #flug
+            grid-area: flug
+            justify-content: center
+            margin: 0 auto
+            margin-top: 120px
+        .over
+            display: none
+    
