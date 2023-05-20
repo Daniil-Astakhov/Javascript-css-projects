@@ -1,0 +1,72 @@
+@import '../../style/variables.scss';
+
+.app {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 37px;
+        a {
+            font-size: 40px;
+        }
+            
+        span {
+            color: $main-color;
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: flex-end;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            li {
+                margin: 0 8px;
+                a:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
+
+}
+.active {
+    color: $main-color;
+}
+.home {
+    position: fixed;
+    top: 4vh;
+    left: 4vh;
+    cursor: pointer;
+    z-index: 999;
+}
+
+.home__btn {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color:#f4efec;
+    cursor: pointer;
+    z-index: 999;
+    filter: drop-shadow(1px 2px 2px black);
+    transition: 0.3s all ease-in-out;
+}
+    
+
+.home__btn:hover {
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    color: #f54494;
+    cursor: pointer;
+    z-index: 999;
+    transform: scale(105%);
+    transition: 0.3s all ease-in-out;
+}
+    

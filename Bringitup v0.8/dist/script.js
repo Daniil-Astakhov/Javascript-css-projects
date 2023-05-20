@@ -5100,13 +5100,15 @@ window.addEventListener('DOMContentLoaded', function () {
   });
   var modilesBtnHome = document.querySelectorAll('.menu__block');
   modilesBtnHome.forEach(function (item) {
-    item.style.zIndex = '99';
-    item.style.cursor = 'pointer';
-    var link = item.querySelector('a'); // находим элемент <a> внутри блока
+    try {
+      item.style.zIndex = '99';
+      item.style.cursor = 'pointer';
+      var link = item.querySelector('a'); // находим элемент <a> внутри блока
 
-    link.addEventListener('click', function (e) {
-      window.location.href = "index.html";
-    });
+      link.addEventListener('click', function (e) {
+        window.location.href = "index.html";
+      });
+    } catch (e) {}
   });
   var slider = new _modules_slider_slider_main__WEBPACK_IMPORTED_MODULE_1__["default"]({
     btns: '.next',

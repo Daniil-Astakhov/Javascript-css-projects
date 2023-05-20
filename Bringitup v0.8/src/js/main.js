@@ -16,12 +16,16 @@ window.addEventListener('DOMContentLoaded', () => {
 
     const modilesBtnHome = document.querySelectorAll('.menu__block');
     modilesBtnHome.forEach(item => {
+        try {
             item.style.zIndex = '99';
             item.style.cursor = 'pointer'
             const link = item.querySelector('a'); // находим элемент <a> внутри блока
             link.addEventListener('click', (e) => {
             window.location.href = "index.html";
-        });
+            });
+        } catch(e){}
+            
+        
       });
     
 
